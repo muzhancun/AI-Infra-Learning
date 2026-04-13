@@ -1,6 +1,8 @@
 该Repo是面向AI Researcher学习AI Infra的个人学习笔记。
 这本书的定位应该很明确：**你已经懂模型、优化、RL 算法，但还没有把“大模型系统”当成一个独立对象来研究**。因此它不该按“框架名”组织，而该按**系统瓶颈**组织：显存与通信、kernel 与编译、KV cache 与 serving、RL rollout 数据流、以及最终的 subquadratic sequence models。到 2026，这条主线已经比较清晰：训练侧是 PyTorch 的 FSDP2、DCP、`torch.compile`、FlexAttention 与 Megatron Core 等多维并行工具；推理侧围绕 KV cache、prefix reuse、continuous batching、disaggregated serving 展开；RL 后训练侧越来越像一个分布式数据流系统，TRL 是轻量基线，OpenRLHF 和 verl/HybridFlow 更偏系统化编排。([PyTorch Documentation][1])
 
+Caution: 大纲和文字内容纯由ChatGPT Pro mode和GPT 5.4 extra high thinking + Codex生成，will be examined as I keep learning.
+
 # AI Infra：从分布式训练、推理系统到 Linear Attention
 
 ## 序：这本书到底在研究什么
