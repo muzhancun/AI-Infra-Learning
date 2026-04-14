@@ -9,8 +9,7 @@ def ceil_div(a: int, b: int) -> int:
 
 def round_robin_assign(num_sms: int, num_blocks: int):
     """TODO 1: assign blocks to SMs in a simple round-robin way."""
-    # raise NotImplementedError("Fill TODO 1")
-    return 
+    raise NotImplementedError("Fill TODO 1")
 
 def idle_sms(assignment):
     """TODO 2: count how many SMs got zero blocks."""
